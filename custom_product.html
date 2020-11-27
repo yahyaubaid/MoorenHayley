@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morleen Hayley - Furniture Shop</title>
+    
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="reference/framework/bootstrap/css/bootstrap.min.css"/>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/css/Main.css">
+  <link rel="stylesheet" href="assets/css/Custom_Product.css">
+
+</head>
+<body>
+  <div class="container">
+    <nav class="row navbar navbar-expand-lg navbar-light bg-white"style="background-color:white;">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo.png" alt="" width="300px" height="26px "/>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navb">
+        <ul class="navbar-nav ml-auto mr-3">
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="explore_product.html">Explore</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#">Inspiration</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#">Promo</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#">Location</a>
+          </li>
+          <li class="nav-item mx-md-2">
+            <a class="nav-link" href="#">Articles</a>
+          </li>
+        </ul>
+  
+        
+      </div>
+    </nav>
+  </div>
+  <header class="text-center">
+    <h1>
+      Customize Our Products 
+    </h1>
+    <p>
+      Moments were giving them
+      <br />
+      the best experience
+    </p>
+    <p class='parag' align='left'>
+      Product &ensp;/&ensp; Details &ensp;/&ensp; <font class="font">Customize</font>
+    </p>
+  </header>
+  <main>
+    <div class="container row" style="max-width: 1400px; margin-bottom: 200px;">
+      <section class="detail-product bg-white col-md-7" style="width: 1100px;">
+        <table border="4" class="table">
+          <tr class="table">
+            <td rowspan="2" valign="top" align="left" class="table" style="width: 200px;">
+              <section class="customize">
+                <p style="margin-bottom:20px;">CUSTOMIZE&nbsp;COLOR</p>
+                <span class="row-md-12">
+                  <p>
+                    <img src="assets/img/Rectangle 26.jpg" alt="" class="color-pick" onclick="pilihWarna(0)">
+                    &emsp;
+                    <img src="assets/img/Rectangle 27.jpg" alt="" class="color-pick" onclick="pilihWarna(1)">
+                    &emsp;
+                    <img src="assets/img/Rectangle 28.jpg" alt="" class="color-pick" onclick="pilihWarna(2)">
+                    &emsp;
+                    <img src="assets/img/Rectangle 29.jpg" alt="" class="color-pick" onclick="pilihWarna(3)">
+                  </p>
+                </span>
+                <hr class="garis">
+                <h3>MIMIMALIST CHAIR</h3>
+                <br>
+                <p>
+                  This is an aesthetic chair <br>
+                  with our best designer <br>
+                  from Sweden, this chair <br>
+                  is so meaningful and <br>
+                  makes with loves. <br>
+                  You will always love this <br>
+                  chair
+                </p>
+                <p align="right" class="harga-custom">
+                  $75,00
+                </p>
+                <hr class="garis">
+                <p align="right" class="tax">
+                  +10% TAX
+                </p>
+                <button class="custom-button" onclick="window.location.href='product_detail.html'">
+                  OK
+                </button>
+                <button class="custom-button" onclick="window.location.href='product_detail.html'">
+                  cancel
+                </button>
+              </section>
+            </td>
+            <td colspan='5' align="center" class="table">
+              <img class="bigPic" src="assets/img/1.jpg" style="width:613px;height:551px;" >
+              <img class="bigPic" src="assets/img/2.jpg" style="width:613px;height:551px;">
+              <img class="bigPic" src="assets/img/3.jpg" style="width:613px;height:551px;">
+              <img class="bigPic" src="assets/img/4.jpg" style="width:613px;height:551px;">
+            </td>      
+          </tr>
+          <tr class="table">
+            <td class="table">
+              <img class="pic" src="assets/img/1.jpg" alt="" onclick="currentPic(0)" width="148px" height="120px"/>
+            </td>
+            <td class="table">
+              <center>
+                <img class="pic" src="assets/img/2.jpg" alt="" onclick="currentPic(1)" width="148px" height="120px"/>
+              </center>
+            </td>
+            <td class="table">
+              <center>
+                <img class="pic" src="assets/img/3.jpg" alt="" onclick="currentPic(2)" width="148px" height="120px"/>
+              </center>
+            </td>
+            <td style="padding-top: 16px;" class="table">
+              <p align='right'>
+                <img class="pic" src="assets/img/4.jpg" alt="" onclick="currentPic(3)" width="148px" height="120px"/>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+  </main>
+  <footer class="section-footer mt-5 mb-4 border-top">
+    <div class="container pt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12 col-lg-3">
+                  <h5>FEATURES</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Social Media Kit</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>ACCOUNT</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Rewards</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>COMPANY</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Media</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <h5>Get Connected</h5>
+                  <ul class="list-unstyled">
+                    <li>Yogyakarta</li>
+                    <li>Indonesia</li>
+                    <li>0821 - 2222 - 8888</li>
+                    <li>support@moreenhayley.id</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row border-top justify-content-center align-items-center pt-4">
+        <div class="col-auto text-gray-500 font-weight-light">
+          2020 Copyright Moreen Hayley • All rights reserved • Made in Yogyakarta
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--JS Bootstrap-->
+  <script src="reference/framework/jquery/jquery-3.4.1.min.js"></script>
+  <script src="reference/framework/bootstrap/js/bootstrap.js"></script>
+
+  <!--JS-->
+  <script src="assets/js/Product_Detail.js"></script>
+  <script src="assets/js/Custom_Product.js"></script>
+
+</body>
+</html>

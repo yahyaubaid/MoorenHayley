@@ -1,0 +1,12 @@
+
+.scrolltop{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+
+}
+
+.button {
+width: 75px;
+height: 75px;
+}

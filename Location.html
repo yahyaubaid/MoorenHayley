@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+	  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <title>Moreen Hayley - Furniture Shop</title>
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles/main.css">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+    <!-- Semantic elements -->
+    <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+    <!-- Bootstrap navbar example -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+<div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+        <img src="assets/img/Logo.png" alt="logo" width="300" height="27" />
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navb"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="explore_product.html">Explore</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="co_insp.html">Inspiration</a>
+            </li>
+			<li class="nav-item mx-md-2">
+              <a class="nav-link" href="Explore Promo.html">Promo</a>
+            </li>
+			<li class="nav-item mx-md-2">
+              <a class="nav-link active" href="">Location</a>
+            </li>
+			<li class="nav-item mx-md-2">
+              <a class="nav-link" href="Articles.html">Articles</a>
+            </li>
+          </ul>
+
+          <!-- Mobile button -->
+        <form class="form-inline d-sm-block d-md-none">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+        <!-- Desktop Button -->
+        <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+        </div>
+      </nav>
+  </div>
+	
+	<header class="text-center" style="color: #ba803d;">
+    <h1>
+      Our Offline Furniture Store
+    </h1>
+    <p>
+      we are spread in various countries<br />
+      in the world
+    </p>
+		<h1><br></h1><h1><br></h1>
+  </header>  
+  
+	<main>
+      <section class="section-details-content">
+        <div class="container">
+          <div class="row">
+            <div class="col p-0 pl-3 pl-lg-0"">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 pl-lg-0">
+              <div class="card card-details">
+                <h1>MOREEN HAYLEY</h1>
+                <p>
+                  Offline store around the world
+                </p>
+                <div class="gallery">
+                  <div class="xzoom-container">
+                    <div id='map' style='width: 670px; height: 350px;'></div>
+				<script>
+	mapboxgl.accessToken = 'pk.eyJ1Ijoic3VyZGloYXRlcmEiLCJhIjoiY2tibHhvZzhvMWRnaTJybWxsdXY0N251NiJ9.Td7sV-MnZ7JRhw2c-WagAw';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [110.370529, -7.800000],
+        zoom: 15
+    });
+
+    /* given a query in the form "lng, lat" or "lat, lng" returns the matching
+     * geographic coordinate(s) as search results in carmen geojson format,
+     * https://github.com/mapbox/carmen/blob/master/carmen-geojson.md
+     */
+    var coordinatesGeocoder = function(query) {
+        // match anything which looks like a decimal degrees coordinate pair
+        var matches = query.match(
+            /^[ ]*(?:Lat: )?(-?\d+\.?\d*)[, ]+(?:Lng: )?(-?\d+\.?\d*)[ ]*$/i
+        );
+        if (!matches) {
+            return null;
+        }
+
+        function coordinateFeature(lng, lat) {
+            return {
+                center: [lng, lat],
+                geometry: {
+                    type: 'Point',
+                    coordinates: [lng, lat]
+                },
+                place_name: 'Lat: ' + lat + ' Lng: ' + lng,
+                place_type: ['coordinate'],
+                properties: {},
+                type: 'Feature'
+            };
+        }
+
+        var coord1 = Number(matches[1]);
+        var coord2 = Number(matches[2]);
+        var geocodes = [];
+
+        if (coord1 < -90 || coord1 > 90) {
+            // must be lng, lat
+            geocodes.push(coordinateFeature(coord1, coord2));
+        }
+
+        if (coord2 < -90 || coord2 > 90) {
+            // must be lat, lng
+            geocodes.push(coordinateFeature(coord2, coord1));
+        }
+
+        if (geocodes.length === 0) {
+            // else could be either lng, lat or lat, lng
+            geocodes.push(coordinateFeature(coord1, coord2));
+            geocodes.push(coordinateFeature(coord2, coord1));
+        }
+
+        return geocodes;
+    };
+
+    map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            localGeocoder: coordinatesGeocoder,
+            zoom: 4,
+            placeholder: 'Try: -40, 170',
+            mapboxgl: mapboxgl
+        })
+    );
+</script>
+                    
+                  </div>
+                
+                  <div class="features row pt-3">
+                    
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card card-details card-right">
+                <h2>Location Details</h2>
+                <hr />
+                <h2>Indonesia</h2>
+                <table class="trip-informations">
+                  <tr>
+                    <th width="50%">City&nbsp;</th>
+                    <td width="50%" class="text-right">&nbsp; &nbsp;Yogyakarta&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">District&nbsp;</th>
+                    <td width="50%" class="text-right">Sleman</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Sub-District</th>
+                    <td width="50%" class="text-right">Depok&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <th width="50%">Contact&nbsp;</th>
+                    <td width="50%" class="text-right">0821-0092-666</td>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+                <p>PT. Moreen Hayley Indonesia Tbk Jl. Mayor Suryotomo, Depok, Sleman, Yogyakarta, 788602 </p>
+              </div>
+              <div class="join-container">
+                <a href="https://api.whatsapp.com/send?phone=6289602960062&text=Saya%20tertarik%20untuk%20memesan%20furniture%20di%20Moreen%20Hayley" class="btn btn-block btn-join-now mt-3 py-2"
+                  >Contact Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+	
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-lg-3">
+                    <h5>FEATURES</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Reviews</a>
+                      </li>
+                      <li>
+                        <a href="#">Community</a>
+                      </li>
+                      <li>
+                        <a href="#">Social Media Kit</a>
+                      </li>
+                      <li>
+                        <a href="#">Affiliate</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>ACCOUNT</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Refund</a></li>
+                      <li><a href="#">Security</a></li>
+                      <li><a href="#">Rewards</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>COMPANY</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Media</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>Get Connected</h5>
+                    <ul class="list-unstyled">
+                      <li>Yogyakarta</li>
+                      <li>Indonesia</li>
+                      <li>0821 - 2222 - 8888</li>
+                      <li>support@moreenhayley.id</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div
+          class="row border-top justify-content-center align-items-center pt-4"
+        >
+          <div class="col-auto text-gray-500 font-weight-light">
+          2019 Copyright Moreen Hayley • All rights reserved • Made in Yogyakara&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

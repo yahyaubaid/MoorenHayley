@@ -1,0 +1,205 @@
+body {
+    background-color: #fff;
+    font-family: 'Assistant', sans-serif;
+    color: #ba803d;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -18px !important;
+    height: 70px;
+    border-radius: 0;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #ba803d;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #6e4c24;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ba803d;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active:hover{
+    cursor: default;
+  }
+  
+  .btn-login {
+    background-color: #ba803d;
+    color: #fff;
+  }
+  
+  .btn-login:hover {
+    background-color: #6e4c24;
+    color: rgb(179, 179, 179);
+  }
+
+header {
+  padding: 180px 0 165px;
+  margin-top: -70px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+}
+
+header h1, header p {
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 22px;
+}
+
+
+.section-details-content .section-detail-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.section-details-content .section-detail-heading p {
+  font-size: 18px;
+}
+
+.section-footer a {
+    color: #ba803d;
+    background-color: #fff;
+  }
+
+.section-details-header {
+  min-height: 310px;
+  background: #e4e6eb;
+  margin-top: -70px;
+}
+
+.section-details-content {
+  margin-top: -210px;
+  min-height: 100vh;
+}
+
+.card-details {
+  padding: 30px;
+  border-radius: 11px;
+}
+
+.card-details h1 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.card-details #ubah {
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  color: #b1b1b1;
+}
+
+.card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
+.gallery .xzoom-container {
+  display: block;
+}
+
+.gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.gallery .xzoom-container .xactive {
+  border: 2px solid #FF9E53;
+}
+
+.bigPic{
+  display: none;
+  position: relative;
+}
+
+.pic{
+  cursor: pointer;
+}
+
+.active1, .pic:hover{
+  border-width: 2px;
+  border-style: solid;
+  background-color: #FF9E53;
+}
+
+.pic2{
+  cursor: pointer;
+}
+
+.active1, .pic2:hover{
+  border-width: 2px;
+  border-style: solid;
+  background-color: #FF9E53;
+}
+
+.pic3{
+  cursor: pointer;
+}
+
+.active1, .pic3:hover{
+  border-width: 2px;
+  border-style: solid;
+  background-color: #FF9E53;
+}
+
+.pic4{
+  cursor: pointer;
+}
+
+.active1, .pic4:hover{
+  border-width: 2px;
+  border-style: solid;
+  background-color: #FF9E53;
+}
+
+.pic5{
+  cursor: pointer;
+}
+
+.active1, .pic5:hover{
+  border-width: 2px;
+  border-style: solid;
+  background-color: #FF9E53;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*# sourceMappingURL=main.css.map */

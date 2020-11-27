@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moreen Hayley - Furniture Shop</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="reference/framework/bootstrap/css/bootstrap.min.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/Main.css">
+    <link rel="stylesheet" href="assets/css/Explore_Product.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white"style="background-color:white;">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/Logo.png" alt="" width="300px" height="26px "/>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navb">
+              <ul class="navbar-nav ml-auto mr-3">
+                <li class="nav-item mx-md-2">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link active" href="">Explore</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link" href="co_insp.html">Inspiration</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link" href="Explore Promo.html">Promo</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link" href="Location.html">Location</a>
+                </li>
+                <li class="nav-item mx-md-2">
+                  <a class="nav-link" href="Articles.html">Articles</a>
+                </li>
+              </ul>
+    
+              <!-- Mobile button -->
+        <form class="form-inline d-sm-block d-md-none">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+        <!-- Desktop Button -->
+        <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+            </div>
+        </nav>
+    </div>
+    <header class="text-center">
+        <h1>
+          Explore Our Products 
+        </h1>
+        <p>
+          the best experience
+          <br />
+          Moments were giving them 
+        </p>
+    </header>
+    <main>
+        <div class="container explore">
+            <section class="row" style=>
+                <input name="pSearch" id="pSearch" class="search-input" 
+                 placeholder="Type to search..." onfocus="this.placeholder=''" 
+                 onblur="this.placeholder='Type to search...'">
+                <div class="dropdown">
+                    <button class="filter">
+                        <span id="ganti">SORT BY&emsp;</span>
+                        <span class="arrow">
+                            &#10094;
+                        </span>
+                    </button>
+                    <div class="dropdown-content" align="center">
+                        <a href="#exploreContent" class="link-dropdown" onclick="tampilSemua()">All</a>
+                        <a href="#exploreContent" class="link-dropdown kategori" onclick="tampilKategori(0)">CHAIR</a>
+                        <a href="#exploreContent" class="link-dropdown kategori" onclick="tampilKategori(1)">SET DINNER</a>
+                    </div>
+                </div>
+            </section>
+            <section class="explore-content" id="exploreContent">
+              <div class="container">
+                <div class="explore-content-product row justify-content-center">
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="beigeWB">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay1.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">BEIGE WOODEN BAR</div>
+                      <div class="product-name">80,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort setD" id="setCD">
+                    <div class="card-product text-center d-flex flex-column"style="background-image: url('assets/img/overlay2.jpg');">
+                      <div class="product-category">SET DINNER</div>
+                      <div class="product-name">SET COUPLE DINNER</div>
+                      <div class="product-name">$80,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="brownW">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay3.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">BROWN WOODEN</div>
+                      <div class="product-name">$180,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="minimalistS">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay4.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">MINIMALIST STYLE</div>
+                      <div class="product-name">$99,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="vintageF">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay5.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">VINTAGE FLORAL</div>
+                      <div class="product-name">$76,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort setD" id="beibehag">
+                    <div class="card-product text-center d-flex flex-column"style="background-image: url('assets/img/overlay6.jpg');">
+                      <div class="product-category">SET DINNER</div>
+                      <div class="product-name">BEIBEHAG</div>
+                      <div class="product-name">$80,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="blueSS">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay7.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">BLUE SMALL SOFA</div>
+                      <div class="product-name">$98,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 sort chair" id="georgeusS">
+                    <div class="card-product text-center d-flex flex-column" style="background-image: url('assets/img/overlay8.jpg');">
+                      <div class="product-category">CHAIR</div>
+                      <div class="product-name">GEORGEUS STYLE</div>
+                      <div class="product-name">$98,00</div>
+                      <div class="view-button mt-auto">
+                        <a href="product_detail.html" class="btn btn-product-details px-4">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+    </main>
+    <footer class="section-footer mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12 col-lg-3">
+                      <h5>FEATURES</h5>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                          <a href="#">Community</a>
+                        </li>
+                        <li>
+                          <a href="#">Social Media Kit</a>
+                        </li>
+                        <li>
+                          <a href="#">Affiliate</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h5>ACCOUNT</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Refund</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Rewards</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h5>COMPANY</h5>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Media</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                      <h5>Get Connected</h5>
+                      <ul class="list-unstyled">
+                        <li>Yogyakarta</li>
+                        <li>Indonesia</li>
+                        <li>0821 - 2222 - 8888</li>
+                        <li>support@moreenhayley.id</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row border-top justify-content-center align-items-center pt-4">
+            <div class="col-auto text-gray-500 font-weight-light">
+              2020 Copyright Moreen Hayley • All rights reserved • Made in Yogyakarta
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!--JS Bootstrap-->
+    <script src="reference/framework/jquery/jquery-3.4.1.min.js"></script>
+    <script src="reference/framework/bootstrap/js/bootstrap.js"></script>
+
+    <!--JS-->
+    <script src="assets/js/Explore_Product.js"></script>
+</body>
+</html>

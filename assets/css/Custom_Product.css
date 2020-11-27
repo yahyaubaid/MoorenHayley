@@ -1,0 +1,90 @@
+*{box-sizing:border-box}
+header{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+header h1,header p{
+    color: #ba803d;
+}
+
+.parag{
+    margin-left: 130px;
+    z-index: 2;
+    position: relative;
+}
+
+.table{
+    border-width: 4px;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ba803d;
+    margin-bottom:20px;
+}
+
+.font{
+    font-weight: bold;
+}
+
+.bigPic{
+    position: relative;
+    display: none;
+}
+.pic:hover{
+    cursor: pointer;
+}
+.detail-product{
+    padding: 29px 0px 0px 29px;
+    margin-left: 70px;
+    margin-top: -110px;
+}
+
+.customize{
+    padding: 29px 40px 0px 50px;
+    font-size: 16pt;
+    width: 590px;
+    margin-right: -170px;
+    color: #ba803d;
+}
+
+.custom-button{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FF9E53;
+    color:#FF9E53;
+    background-color: transparent;
+}
+.custom-button:hover{
+    background-color: #FF9E53;
+    color: white;
+}
+.custom-button:focus{
+    outline: none;
+}
+
+.color-pick{
+    margin:"0 10px 0 10px";
+    padding: "0 10px 0 10px";
+}
+.active-pick{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF9E53;
+}
+.color-pick:hover{
+    cursor: pointer;
+}
+.garis{
+    width: 340px;
+    margin-right: 170px;
+}
+.harga-custom{
+    font-size: 40pt;
+}
+.tax{
+    font-size: 15pt;
+}
+.harga-custom,.tax{
+    color: #ba803d;
+    margin-right: 170px;
+}

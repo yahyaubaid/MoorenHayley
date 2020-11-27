@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moreen Hayley - Furniture Shop</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="reference/framework/bootstrap/css/bootstrap.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/co_details.css" />
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white"style="background-color:white;">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/Logo.png" alt="" width="300px" height="26px "/>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md-2">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link link" href="explore_product.html">Explore</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="co_insp.html">Inspiration</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Explore Promo.html">Promo</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Location.html">Location</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Articles.html">Articles</a>
+            </li>
+          </ul>
+
+          <!-- Mobile button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0" onclick="window.location.href='login.html'">
+              Login
+            </button>
+          </form>
+          <!-- Desktop Button -->
+          <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" onclick="window.location.href='login.html'">
+              Login
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <main>
+        <section class="section-details-header">
+        </section>
+        <section class="section-details-content">
+          <div class="container">
+            <div class="row">
+              <div class="col p-0 pl-3 pl-lg-0">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item" aria-current="page">
+                      Product
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                      Details
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Checkout
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 pl-lg-0">
+                <div class="card card-details mb-3">
+                  <h1>Who are you?</h1>
+                  <p>
+                    Prepare yourself
+                  </p>
+                  <div class="attendee">
+                    <table class="table table-responsive-sm text-center">
+                      <thead>
+                        <tr>
+                          <td scope="col">Picture</td>
+                          <td scope="col">Name</td>
+                          <td scope="col">Nationality</td>
+                          <td scope="col">Visa</td>
+                          <td scope="col">Passport</td>
+                          <td scope="col"></td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img
+                              src="assets/img/avatar-1.png"
+                              alt=""
+                              height="60"
+                            />
+                          </td>
+                          <td class="align-middle">Muhammad Yahya Ubaid</td>
+                          <td class="align-middle">INA</td>
+                          <td class="align-middle">N/A</td>
+                          <td class="align-middle">Active</td>
+                          <td class="align-middle">
+                            <a href="#">
+                              <img src="frontend/images/ic_remove.png" alt="" />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="member mt-3">
+                    <h2>Add Secondary Contact for Backup</h2>
+                    <form class="form-inline">
+                      <label class="sr-only" for="inputUsername">Name</label>
+                      <input
+                        type="text"
+                        class="form-control mb-2 mr-sm-2"
+                        id="inputUsername"
+                        placeholder="Username"
+                      />
+  
+                      <label
+                        class="sr-only"
+                        class="mr-2"
+                        for="inlineFormCustomSelectPref"
+                        >Preference</label
+                      >
+                      <select
+                        class="custom-select mb-2 mr-sm-2"
+                        id="inlineFormCustomSelectPref"
+                      >
+                        <option selected value="">Nationality</option>
+                        <option value="2">Indonesian</option>
+                        <option value="3">Malaysian</option>
+                      </select>
+  
+                      <label class="sr-only" for="doePassport"
+                        >Address</label
+                      >
+                      <div class="input-group mb-2 mr-sm-2">
+                        <input
+                          type="text"
+                          class="form-control datepicker"
+                          id="address"
+                          placeholder="Address"
+                        />
+                      </div>
+  
+                      <button type="submit" class="btn btn-add-now mb-2 px-4">
+                        Add Now
+                      </button>
+                    </form>
+                    <h3 class="mt-2 mb-0">Note</h3>
+                    <p class="disclaimer mb-0">
+                      Estimate time arrival can change variable based on our delivery partner and condition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card-details card-right">
+                  <h2>Checkout Information</h2>
+                  <table class="trip-informations">
+                    <tr>
+                      <th width="50%">Members</th>
+                      <td width="50%" class="text-right">1 person</td>
+                    </tr>
+                    <tr>
+                      <th width="50%">Additional Visa</th>
+                      <td width="50%" class="text-right">$ 120,00</td>
+                    </tr>
+                    <tr>
+                      <th width="50%">Trip Price</th>
+                      <td width="50%" class="text-right">$ 20,00 / person</td>
+                    </tr>
+                    <tr>
+                      <th width="50%">Sub Total</th>
+                      <td width="50%" class="text-right">$ 140,00</td>
+                    </tr>
+                    <tr>
+                      <th width="50%">Total (+Unique)</th>
+                      <td width="50%" class="text-right text-total">
+                        <span class="text-blue">$ 139,</span
+                        ><span class="text-orange">33</span>
+                      </td>
+                    </tr>
+                  </table>
+  
+                  <hr />
+                  <h2>Payment Instructions</h2>
+                  <p class="payment-instructions">
+                    Please complete your payment before to continue the transaction
+                  </p>
+                  <div class="bank">
+                    <div class="bank-item pb-3">
+                      <img
+                        src="assets/img/ic_bank.png"
+                        alt=""
+                        class="bank-image"
+                      />
+                      <div class="description">
+                        <h3>PT Moreen Hayley</h3>
+                        <p>
+                          0881 8829 8800
+                          <br />
+                          Bank Central Asia
+                        </p>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="bank-item">
+                      <img
+                        src="assets/img/ic_bank.png"
+                        alt=""
+                        class="bank-image"
+                      />
+                      <div class="description">
+                        <h3>PT Moreen Hayley</h3>
+                        <p>
+                          0899 8501 7888
+                          <br />
+                          Bank HSBC
+                        </p>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="join-container">
+                  <a href="success.html" class="btn btn-block btn-join-now mt-3 py-2" id="button"
+                    >I Have Made Payment</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-lg-3">
+                    <h5>FEATURES</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Reviews</a>
+                      </li>
+                      <li>
+                        <a href="#">Community</a>
+                      </li>
+                      <li>
+                        <a href="#">Social Media Kit</a>
+                      </li>
+                      <li>
+                        <a href="#">Affiliate</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>ACCOUNT</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#" >Terms and Conditions</a></li>
+                      <li><a href="#">Refund</a></li>
+                      <li><a href="#">Security</a></li>
+                      <li><a href="#">Rewards</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>COMPANY</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Media</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>Get Connected</h5>
+                    <ul class="list-unstyled">
+                      <li>Yogyakarta</li>
+                      <li>Indonesia</li>
+                      <li>0821 - 2222 - 8888</li>
+                      <li>support@moreenhayley.id</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row border-top justify-content-center align-items-center pt-4">
+          <div class="col-auto text-gray-500 font-weight-light">
+            2020 Copyright Kelompok • All rights reserved • Made in (rumah masing-masing)
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--JS-->
+    <script src="assets/js/co_detail.js"></script>
+    <script src="reference/framework/jquery/jquery-3.4.1.min.js"></script>
+    <script src="reference/framework/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

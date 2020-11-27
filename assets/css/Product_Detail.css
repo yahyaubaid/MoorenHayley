@@ -1,0 +1,129 @@
+header{
+    margin-top: -90px;
+    padding: 180px 0 165px;
+    background-image: url("../img/Rectangle 7.jpg");
+    background-size: cover;
+}
+
+.border-div{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E4E6EB;
+}
+
+* {box-sizing: border-box}
+
+.bigPic{
+    display: none;
+    position: relative;
+}
+
+.pic{
+    cursor: pointer;
+}
+
+.active, .pic:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF9E53;
+}
+
+header p{
+    margin-top: -50px;
+    padding-left: 113px;
+    color: #ba803d;
+}
+
+font{
+    color: #ba803d;
+    font-weight: bold;
+}
+
+div section{
+    border-radius: 15px;
+    position: static;
+}
+
+.detail-product{
+    padding: 29px 0 0px 29px;
+    margin: -155px 0 0 104px;
+}
+
+.keterangan-produk,.harga{
+    color: #B1B1B1;
+}
+
+.custom-button{
+    width: 700px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FF9E53;
+    color:#FF9E53;
+    background-color: transparent;
+    margin: 20px 0 40px 0;
+}
+
+.custom-button:hover{
+    background-color: #FF9E53;
+    color: white;
+}
+.custom-button:focus{
+    outline: none;
+}
+
+h5{
+    font-weight: normal;
+}
+
+.garis-vr{
+    width: 1px; 
+    margin: 0 0 15px -20px; 
+    background-color: #B1B1B1;
+}
+
+.price-detail{
+    padding: 29px 0 0px 15px;
+    margin: -155px 0 0 50px;
+}
+
+.harga{
+    font-size: 30pt;
+    margin-right: 50px;
+}
+
+.info-harga{
+    color: #B1B1B1; 
+    font-weight: normal;
+}
+
+.btn-buy{
+    width:330px;
+    margin-left:-16px;
+    padding:10px 0 10px 0;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.btn-buy:hover{
+    background-color: #d38041;
+    color: rgb(206, 202, 202);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

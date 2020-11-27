@@ -1,0 +1,107 @@
+header{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+header h1,header p{
+    color: #ba803d;
+}
+
+.explore{
+    margin-top: -60px;
+    margin-left: 100px;
+}
+
+.icon{
+    position: absolute;
+    color: #707070;
+    display: none;
+}
+
+.search-input{
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #707070;
+    border-width: 1px;
+    width: 980px;
+    padding-left: 40px;
+    color: #ba803d;
+    background-image: url("../img/Group 1.png");
+    background-repeat: no-repeat;
+    font-size: 16pt;
+}
+
+.search-input:focus{
+    outline: none;
+    color: #ba803d;
+    font-size: 16pt;
+}
+
+.search-input::-webkit-search-cancel-button{
+    display: none;
+}
+
+.dropdown{
+    position: relative;
+    display: block;
+}
+
+.filter{
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #707070;
+    border-width: 1px;
+    background-color: transparent;
+    color: #707070;
+    font-size: 16pt;
+    width: 130px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.filter:focus{
+    outline: none;
+}
+
+.arrow{
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 160px;
+    margin-left: 30px;
+    background-color: white;
+    transition: t .5s ease;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.link-dropdown{
+    color: #ba803d;
+}
+.link-dropdown:hover{
+    color: white;
+    background-color: #6e4c24;
+}
+
+.explore-content{
+    padding-top: 50px;
+}

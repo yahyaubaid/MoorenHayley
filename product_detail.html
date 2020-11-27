@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Moreen Hayley - Furniture Shop</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="reference/framework/bootstrap/css/bootstrap.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/Main.css">
+    <link rel="stylesheet" href="assets/css/Product_Detail.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white"style="background-color:white;">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/Logo.png" alt="" width="300px" height="26px "/>
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navb">
+            <ul class="navbar-nav ml-auto mr-3">
+              <li class="nav-item mx-md-2">
+              <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a class="nav-link" href="explore_product.html">Explore</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a class="nav-link" href="co_insp.html">Inspiration</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a class="nav-link" href="Explore Promo.html">Promo</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a class="nav-link" href="Location.html">Location</a>
+              </li>
+              <li class="nav-item mx-md-2">
+                <a class="nav-link" href="Articles.html">Articles</a>
+              </li>
+            </ul>
+  
+            <!-- Mobile button -->
+        <form class="form-inline d-sm-block d-md-none">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+        <!-- Desktop Button -->
+        <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+          <a href="login.html" class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" style="padding-top: 20px;">
+            Login
+          </a>
+        </form>
+          </div>
+        </nav>
+    </div>
+    <header>
+        <p>
+            Product &ensp;/&ensp; <font>Details</font>
+        </p>
+    </header>
+    <main>
+        <div class="container row" style="max-width: 1400px; margin-bottom: 200px;">
+          <section class="detail-product bg-white col-md-7 border-div" style="width: 700px;">
+            <h1>CHAIR SET</h1>
+            <p class="keterangan-produk">Modern minimalist style for elegant room</p>
+            <table style="margin-bottom:20px;">
+              <tr>
+                <td colspan='5'>
+                  <img class="bigPic fade" src="assets/img/pic_featured0.jpg" style="width:660px;height:350px;">
+                  <img class="bigPic fade" src="assets/img/pic_featured1.jpg" style="width:660px;height:350px;">
+                  <img class="bigPic fade" src="assets/img/pic_featured2.jpg" style="width:660px;height:350px;">
+                  <img class="bigPic fade" src="assets/img/pic_featured3.jpg" style="width:660px;height:350px;">
+                  <img class="bigPic fade" src="assets/img/pic_featured4.jpg" style="width:660px;height:350px;">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img class="pic" src="assets/img/pic_featured0.jpg" alt="" onclick="currentPic(0)" width="120px" height="80px"/>
+                </td>
+                <td>
+                  <center>
+                    <img class="pic" src="assets/img/pic_featured1.jpg" alt="" onclick="currentPic(1)" width="120px" height="80px"/>
+                  </center>
+                </td>
+                <td>
+                  <center>
+                    <img class="pic" src="assets/img/pic_featured2.jpg" alt="" onclick="currentPic(2)" width="120px" height="80px"/>
+                  </center>
+                </td>
+                <td>
+                  <center>
+                    <img class="pic" src="assets/img/pic_featured3.jpg" alt="" onclick="currentPic(3)" width="120px" height="80px"/>
+                  </center>
+                </td>
+                <td style="padding-top: 16px;">
+                  <p align='right'>
+                    <img class="pic" src="assets/img/pic_featured4.jpg" alt="" onclick="currentPic(4)" width="120px" height="80px"/>
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <h3>About Product</h3>
+            <p class="keterangan-produk" style="margin-bottom:15px;">
+              This is a product set chair who made with love, with our best designer partner <br>
+              One of the earliest Scandinavian influences on American furniture design, <br>
+              jens risom's side chair illustrates the inherent Scandinavian understated aesthetic <br>
+              Fastened with white straps color braid,. American ash natural color sw012-naa solid wood <br>
+              Stylish furniture for your home <br>
+              Material: Wood and fabric <br>
+              Assembly required
+            </p>
+            <button class="custom-button" onclick="window.location.href='custom_product.html'">
+              Custom This Product
+            </button>
+            <div class="row" style="margin:0 0 20px -10px;">
+              <div class="col-md-4">
+                <div class="row">
+                  <img src="assets/img/ic_event.jpg" alt="" class="rounded-circle" width="55px" height="55px" style="padding:-3px 0 0 5px;"/>
+                  <div class="col">
+                    <h5>Featured</h5>
+                    <p class="keterangan-produk">Minimalism</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 garis-vr"></div>
+              <div class="col-md-4" style="margin-left: 15px;">
+                <div class="row">
+                  <img src="assets/img/ic_language.jpg" alt="" class="rounded-circle" width="55px" height="55px" style="padding:-3px 0 0 5px;"/>
+                  <div class="col">
+                    <h5>Ideas</h5>
+                    <p class="keterangan-produk">Minimalist Idea</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-1 garis-vr"></div>
+              <div class="col-md-4" style="margin-left: 15px;">
+                <div class="row">
+                  <img src="assets/img/ic_foods.jpg" alt="" class="rounded-circle" width="55px" height="55px" style="padding:-3px 0 0 5px;"/>
+                  <div class="col">
+                    <h5>Foods</h5>
+                    <p class="keterangan-produk">Food Resistant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="price-detail bg-white col-md-3 border-div" style="margin-bottom: 625px; border-radius: 15px 15px 0 0;">
+            <h3 style="font-weight: normal;">PRICE</h3>
+            <p class="harga" align='right'>$120</p>
+            <hr style="margin-right: 20px;">
+            <p style="font-size: 18pt;">Price Informations</p>
+            <div class="row" style='width:400px;'>
+              <div class="col-md-6" style="margin-left: px;">
+                <p align='left' style="font-size: 15pt;font-weight: normal">
+                  Estimate Departure <br>
+                  Duration <br>
+                  Type <br>
+                  Delivery Service
+                </p>
+              </div>
+              <div class="col-md-4">
+                <p class='info-harga' align='right' style="font-size: 15pt;">
+                  22 Aug,2020 <br>
+                  4D 3N <br>
+                  Chair Set <br>
+                  $20,00
+                </p>
+              </div>
+            </div>
+            <a href="co_details.html"style='text-decoration:none;'><div class="row-md-12 btn-buy"><center><h5>Buy Now</h5></center></div></a>
+          </section>
+        </div>
+    </main>
+    <footer class="section-footer mt-5 mb-4 border-top">
+      <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-12 col-lg-3">
+                    <h5>FEATURES</h5>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">Reviews</a>
+                      </li>
+                      <li>
+                        <a href="#">Community</a>
+                      </li>
+                      <li>
+                        <a href="#">Social Media Kit</a>
+                      </li>
+                      <li>
+                        <a href="#">Affiliate</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>ACCOUNT</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Terms and Conditions</a></li>
+                      <li><a href="#">Refund</a></li>
+                      <li><a href="#">Security</a></li>
+                      <li><a href="#">Rewards</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>COMPANY</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Career</a></li>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Media</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-12 col-lg-3">
+                    <h5>Get Connected</h5>
+                    <ul class="list-unstyled">
+                      <li>Yogyakarta</li>
+                      <li>Indonesia</li>
+                      <li>0821 - 2222 - 8888</li>
+                      <li>support@moreenhayley.id</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row border-top justify-content-center align-items-center pt-4">
+          <div class="col-auto text-gray-500 font-weight-light">
+            2020 Copyright Moreen Hayley • All rights reserved • Made in Yogyakarta
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--JS-->
+    <script src="assets/js/Product_Detail.js"></script>
+</body>
+</html>

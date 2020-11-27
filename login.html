@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moreen Hayley - Furniture Shop</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="reference/framework/bootstrap/css/bootstrap.css"/>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/login.css" />
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-white"style="background-color:white;">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/Logo.png" alt="" width="300px" height="26px "/>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navb">
+          <ul class="navbar-nav ml-auto mr-3">
+            <li class="nav-item mx-md-2">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link link" href="explore_product.html">Explore</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="co_insp.html">Inspiration</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Explore Promo.html">Promo</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Location.html">Location</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="Articles.html">Articles</a>
+            </li>
+          </ul>
+
+          <!-- Mobile button -->
+          <form class="form-inline d-sm-block d-md-none">
+            <button class="btn btn-login my-2 my-sm-0"onclick="window.location.href='login.html'">
+              Masuk
+            </button>
+          </form>
+          <!-- Desktop Button -->
+          <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4"onclick="window.location.href='login.html'">
+              Login
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row header-sign-in">
+            <div class="col-md-12">
+                <img class="logo-header" height="80" src="images/applogocolored.png" alt="">
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-11 offset-md-1 form-sign-in">
+                <div class="row">
+                    <div class="col-md-6 d-none d-sm-block">
+                        <img class="icon-header" height="500" src="assets/img/login2.png" alt="">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="title-form">
+                          WELCOME TO 
+                          <br/>
+                          MOREEN HAYLEY
+                        </p>
+                        <p class="subtitle-form">
+                          Join our community that have more than 10000 subscribers and learn new things everyday
+                        </p>
+                        <form method="POST" id="formLogin">
+                            <div class="form-group content-sign-in">
+                                <label class="title-input"
+                                    for="exampleInputEmail1">Email</label>
+                                <input name="email" type="email" class="form-control"
+                                    id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label class="title-input"
+                                    for="exampleInputPassword1">Password</label>
+                                <input name="password" type="password" class="form-control"
+                                    id="password" placeholder="Password">
+                            </div>
+                            <button type="submit" name="signin" class="btn btn-login">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!--JS-->
+    <script src="assets/js/login.js"></script>
+    <script src="reference/framework/jquery/jquery-3.4.1.min.js"></script>
+    <script src="reference/framework/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    background-color: #fff;
+    font-family: 'Assistant', sans-serif;
+    color: #ba803d;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .btn-navbar-right {
+    margin-top: -10px !important;
+    margin-bottom: -8px !important;
+    margin-right: -18px !important;
+    height: 70px;
+    border-radius: 0;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: #ba803d;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #6e4c24;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ba803d !important;
+  }
+  .navbar-light .navbar-nav .nav-link.active:hover{
+    cursor: default;
+  }
+  
+  .btn-login {
+    background-color: #ba803d;
+    color: #fff;
+  }
+  
+  .btn-login:hover {
+    background-color: #6e4c24;
+    color: rgb(179, 179, 179)
+  }
+  
+  header {
+    margin-top: -68px;
+    padding: 180px 0 165px;
+    background-image: url("../images/header-background.jpg");
+    background-size: cover;
+  }
+  
+  header h1,
+  header p {
+    color: #fff;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 22px;
+  }
+  
+  header .btn-get-started {
+    background-color: #FF9E53;
+    color: #fff;
+  }
+  
+  header .btn-get-started:hover {
+    color: #fff;
+  }
+  
+  .section-details-header {
+    min-height: 310px;
+    background: #e4e6eb;
+    margin-top: -68px;
+  }
+
+  .section-success{
+    height: 90vh;
+  }
+
+  .section-success h1{
+    font-weight: 600;
+    font-size: 26px;
+    color: #ba803d;
+  }
+
+  .section-success p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #b1b1b1;
+  }
+
+  .section-success .btn-home-page{
+    border-radius: 4px;
+    background-color: #6e4c24;
+    color: #fff;
+  }
+
+  .section-success .btn-home-page :hover{
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ba803d;
+  }
+  /*# sourceMappingURL=main.css.map */
